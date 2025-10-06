@@ -14,13 +14,25 @@ header {
     
 }
 
+#header-divider1{
+    margin: 0px;
+    padding: 0px;
+    background-color:  rgb(3, 3, 40);
+    display: flex;
+    z-index: 1;
+   
+}
+
 #header-line{
  height: 90px;
  box-sizing: border-box;
  border: 5px solid green;
+
 }
 #header-permanent{
     padding: 10px;
+   
+  
 }
 
 #header-h1{
@@ -41,10 +53,16 @@ header {
     font-size: 20px;
     animation-name: slide;
     animation-duration: 2s;
+   animation-iteration-count: infinite;
+   overflow: hidden;
+    
 }
 @keyframes slide{
     from{
-        transform: translateX(200%)
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translate(0%);
     }
 }
 
